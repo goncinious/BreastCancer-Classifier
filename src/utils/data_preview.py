@@ -9,7 +9,7 @@ Created on Wed Dec 20 23:53:27 2017
 
 
 def DisplaySamples(im_folder, target, class_perc = 0.05):
-    from data_read.data_utils import ReadImage
+    from utils.data_utils import ReadImage
     from sklearn.model_selection import StratifiedShuffleSplit
     import matplotlib.gridspec as gridspec
     import matplotlib.pyplot as plt

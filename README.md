@@ -3,7 +3,7 @@
 - Build detection tool for reducing human evaluation time of histological images.
 - Dataset provided by ICIAR2018 Challenge (https://iciar2018-challenge.grand-challenge.org).
 
-Notebooks shows the processing workflow and analysis performed.
+Notebooks contain processing workflow and analysis performed on this dataset.
 
 
 Goncalo Figueira

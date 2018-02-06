@@ -73,34 +73,21 @@ def FeatureExtract(im_file, filt, nkeys, pca, gmm, scaler):
     im_gray = cv2.cvtColor(im, cv2.COLOR_BGR2GRAY)
     #im_gray = cv2.normalize(im_gray,im_gray, 0, 255, cv2.NORM_MINMAX)
 
-    # histogram eq
-    #im_gray = cv2.equalizeHist(im_gray)
-    
     # apply gaussian filter
     #im_gray = cv2.GaussianBlur(im_gray,(15,15),0)
     
     # extract SIFT descriptors
-   # sift = cv2.xfeatures2d.SIFT_create()
     sift = cv2.xfeatures2d.SIFT_create(nfeatures = nkeys)
     kp, descriptors = sift.detectAndCompute(im_gray, None)
-    
-    A2 = np.sqrt(np.sum(np.square(descriptors), axis=1))
-    descriptors = np.divide(descriptors, A2[:,None])
-    
-    #descriptors /= (descriptors.sum(axis=1, keepdims=True) + 1e-7)
-    #descriptors = np.sqrt(descriptors)
+
+    descriptors /= (descriptors.sum(axis=1, keepdims=True) + 1e-7)
+    descriptors = np.sqrt(descriptors)
     
     # apply pca transform
-    #descriptors = scaler.transform(descriptors)
     descriptors = pca.transform(descriptors)
     
     # compute Fisher Vector
     fv = computeFV(descriptors, gmm)
-    
-    # normalization 1
-    fv = np.sqrt(abs(fv)) * np.sign(fv)
-    fv = fv / np.sqrt(np.dot(fv, fv))
-    
     
     # power-normalization
    # fv = np.sign(fv) * np.abs(fv) ** 0.5
@@ -108,5 +95,3 @@ def FeatureExtract(im_file, filt, nkeys, pca, gmm, scaler):
     #fv /= np.sqrt(np.sum(fv ** 2))
     
     return fv
-
-    

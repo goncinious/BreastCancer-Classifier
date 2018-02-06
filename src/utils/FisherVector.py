@@ -83,7 +83,8 @@ def FeatureExtract(im_file, filt, nkeys, pca, gmm, scaler):
     descriptors /= (descriptors.sum(axis=1, keepdims=True) + 1e-7)
     descriptors = np.sqrt(descriptors)
     
-    # apply pca transform
+    # apply scaler and pca transform
+    descriptors = scaler.transform(descriptors)
     descriptors = pca.transform(descriptors)
     
     # compute Fisher Vector

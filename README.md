@@ -5,6 +5,7 @@
 
 Notebooks contain processing workflow and analysis performed on this dataset.
 
+![alt text](/src/utils/class_examples.png)
 ## Reading images and visualisation
 
 1-Data_Visualisation.ipynb

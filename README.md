@@ -5,12 +5,12 @@
 
 Notebooks contain processing workflow and analysis performed on this dataset.
 
-Reading images and visualisation
+## Reading images and visualisation
 
 1-Data_Visualisation.ipynb
 
 
-Building SVM classifier for Breast Cancer classification using Fisher Vector representation.
+## Fisher Vector approach Breast Cancer classification.
 
 2-FisherVector_SVM.ipynb
 

@@ -12,7 +12,7 @@ Notebooks contain processing workflow and analysis performed on this dataset.
 [1-Data_Visualisation.ipynb](/notebooks/1-Data_Visualisation.ipynb)
 
 
-## 2) Fisher Vector approach for Breast Cancer classification.
+## 2) Fisher Vector approach for Breast Cancer classification
 
 [2-FisherVector_SVM.ipynb](/notebooks/2-FisherVector_SVM.ipynb)
 

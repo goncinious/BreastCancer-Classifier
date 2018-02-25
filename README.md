@@ -11,7 +11,8 @@
 [2-FisherVector_SVM.ipynb](/notebooks/2-FisherVector_SVM.ipynb)
 
 ## 3) Classification: ConvNets (93% test acc.)
-[3-CNN1.ipynb](/notebooks/3-CNN1.ipynb)
+[3-CNN1.ipynb](/notebooks/3-ConvNet1.ipynb)
+
 
 ![alt text](/src/utils/class_examples.png)
 

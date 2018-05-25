@@ -18,7 +18,6 @@
 
 
 
-##### Goncalo Figueira
 
 goncalochavesf@gmail.com
 

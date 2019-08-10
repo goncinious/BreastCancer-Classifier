@@ -1,7 +1,7 @@
 # Automating breast cancer diagnosis in histopathology
 
 
-- Build ML-based classifier to reduce inspection time of pathologists.
+- Build ML-based classifier to reduce inspection time by pathologists.
 - Dataset was provided by [ICIAR2018 Challenge](https://iciar2018-challenge.grand-challenge.org).
 - Data comprised by 400 images [1535x2048x3] of 4 classes (100 each): Benign, InSitu, Invasive, Normal.
 

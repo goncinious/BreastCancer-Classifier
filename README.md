@@ -1,4 +1,4 @@
-# Automating breast cancer diagnosis in histopathology images
+# Automating breast cancer diagnosis in histopathology
 
 
 - Build ML-based classifier to reduce inspection time of pathologists.

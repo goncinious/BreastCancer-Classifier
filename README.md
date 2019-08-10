@@ -16,8 +16,3 @@
 
 ![alt text](/src/utils/class_examples.png)
 
-
-
-
-goncalochavesf@gmail.com
-

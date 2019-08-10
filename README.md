@@ -7,8 +7,8 @@
 
 
 Two approaches developed:
-1. Machine learning: Extract Fisher Vector representation from each image and train a SVM classifier.
-2. Deep learning: Learn representation automatically using a Convolutional Neural Networks (CNNs).
+1. Traditional machine learning: Extract Fisher Vector representation from histopathology images and train a SVM classifier.
+2. Deep learning: Learn representation automatically using a Convolutional Neural Network (CNN).
 
 ## Jupyter notebooks:
 

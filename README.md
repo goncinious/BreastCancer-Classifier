@@ -6,7 +6,7 @@
 
 Two approaches developed:
 1. Traditional machine learning: Extract Fisher Vector representation from histopathology images and train a SVM classifier.
-2. Deep learning: Learn representation automatically using a Convolutional Neural Network (CNN) in Pytorch.
+2. Deep learning: Learn representation automatically using a Convolutional Neural Network (CNN) in Pytorch (to be updated).
 
 ## Jupyter notebooks:
 
@@ -15,9 +15,6 @@ Two approaches developed:
 
 ### 2) Classification: FisherVector+SVM (80% test acc.)
 [2-FisherVector_SVM.ipynb](/notebooks/2-FisherVector_SVM.ipynb)
-
-### 3) Classification: CNN (93% test acc.)
-[3-CNN1.ipynb](/notebooks/3-ConvNet1.ipynb)
 
 
 ![alt text](/src/utils/class_examples.png)
